@@ -1,0 +1,339 @@
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Pacifico:regular");
+@font-face {
+    font-family: 'Piazzolla SC';
+    src: url('../fonts/PiazzollaSC-BoldItalic.woff2') format('woff2'), url('../fonts/PiazzollaSC-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Piazzolla SC';
+    src: url('../fonts/PiazzollaSC-Bold.woff2') format('woff2'), url('../fonts/PiazzollaSC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Piazzolla SC';
+    src: url('../fonts/PiazzollaSC-Regular.woff2') format('woff2'), url('../fonts/PiazzollaSC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+    /* по умолчанию */
+}
+
+body {
+    line-height: 1;
+    font-family: "Piazzolla SC", serif;
+    background-color: lightgrey;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+
+/* ------------GLOBAL------------------ */
+
+h1,
+h3 {
+    font-family: "Pacifico", cursive;
+    background-color: #ff5454;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+div {
+    color: #fff;
+}
+
+h2 {
+    color: #000;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.mb40 {
+    margin: 0 0 40px 0;
+}
+
+.ib {
+    display: inline-block;
+}
+
+.padding30 {
+    padding: 30px;
+}
+
+
+/* -----MAIN------- */
+
+main>div {
+    background-color: green;
+}
+
+main>span {
+    background-color: brown;
+}
+
+main>img {
+    background-color: #000;
+}
+
+main>.ib {
+    background-color: pink;
+}
+
+ul li {
+    display: inline-block;
+    background-color: #fa0;
+    margin: 0 30px 30px;
+    padding: 30px 20px;
+    width: 300px;
+}
+
+.none {
+    display: none;
+}
+
+.inline {
+    display: inline;
+}
+
+div.inline {
+    margin: 0 30px 0 0;
+}
+
+p {
+    background-color: #ba0300;
+}
+
+.blok {
+    display: block;
+}
+
+span.blok {
+    margin: 40px 0;
+}
+
+
+/* -----BLOCK-------- */
+
+.block1 {
+    margin: 0 0 20px 0;
+}
+
+.block2 {
+    margin: 0 0 50px 100px;
+}
+
+.block3 {
+    width: 600px;
+    height: 150px;
+    overflow: visible;
+}
+
+.block4 {
+    min-width: 700px;
+    max-height: 100px;
+    overflow: scroll;
+}
+
+.block5 {
+    max-width: 700px;
+    min-height: 100px;
+}
+
+
+/* ------INLINE------- */
+
+.inline1 {
+    margin: 50px;
+}
+
+.inline2 {
+    margin: -20px;
+    background-color: brown;
+}
+
+.inline3 {
+    line-height: 85px;
+}
+
+
+/* --------INLINE-BLOCK-------- */
+
+.ib1 {
+    margin: 50px 30px;
+}
+
+.ib2 {
+    margin: 0 20px 0 0;
+}
+
+.ib3 {
+    width: 300px;
+    height: 59px;
+    overflow: hidden;
+}
+
+.ib4 {
+    min-width: 700px;
+    max-height: 100px;
+    overflow: auto;
+}
+
+.ib5 {
+    max-width: 700px;
+    min-height: 100px;
+}
+
+
+/* ---------IMG-------- */
+
+.img1 {
+    margin: 20px 0 50px 35px;
+    width: 550px;
+}
+
+.img2 {
+    margin: 50px 0;
+    padding: 15px 10px 20px 0;
+}
+
+.img3 {
+    height: 100px;
+    width: 600px;
+}
+
+.img4 {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.img5 {
+    width: 100%;
+    min-width: 500px;
+    min-height: 200px;
+    overflow: scroll;
+}
+
+
+/* ---ADDITIONAL-TASK----- */
+
+.add1 span {
+    display: block;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+.add2 div {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 15px;
+    background-color: blue;
+    text-decoration: underline;
+}
+
+.add3 a {
+    display: inline-block;
+    color: #fff;
+    background-color: #3344bd;
+    margin: 0 0 30px 0;
+    letter-spacing: 5px;
+}
+
+.add4 p {
+    display: inline-block;
+    max-width: 100px;
+    margin: 0 30px 0 0;
+    padding: 10px;
+}
+
+.add5 div {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #543;
+    padding: 30px;
+    line-height: 120%;
+    word-spacing: 7px;
+    text-decoration: line-through;
+}
+
+.add5 div+div {
+    width: 30%;
+    margin: -30px auto 0;
+    background-color: #345;
+    color: #ff0;
+}
+
+.add6 span {
+    display: block;
+    max-height: 200px;
+    overflow: auto;
+    background-color: #346;
+    font-size: 25px;
+    color: #f00;
+    text-align: justify;
+}
+
+
+/* --------FOOTER--------- */
+
+footer>div {
+    background-color: green;
+}
